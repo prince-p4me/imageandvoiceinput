@@ -1,8 +1,8 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Home from "../screens/Home";
-import About from "../screens/About";
-import Contact from "../screens/Contact";
+import Profile from "../screens/Profile";
+import Setting from "../screens/Setting";
 
 const Tab = createBottomTabNavigator();
 
@@ -13,8 +13,8 @@ const BottomTabNavigator = ({ route }) => {
       inactiveTintColor: 'black',
     }} initialRouteName={route.name}>
       <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Contact" component={Contact} />
-      <Tab.Screen name="About" component={About} />
+      <Tab.Screen name="Setting" component={Setting} />
+      <Tab.Screen name="Profile" component={Profile} />
     </Tab.Navigator>
   );
 };

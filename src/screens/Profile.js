@@ -4,14 +4,15 @@ import Header from "../components/Header";
 
 import styles from "../utility/Style";
 
-const About = ({ navigation, route }) => {
+const Profile = ({ navigation, route }) => {
+  const { name } = route;
   return (
     <View style={styles.container}>
-      <Header title={route.name} toogleDrawer={navigation.toggleDrawer} />
+      <Header title={name} toogleDrawer={navigation.toggleDrawer} />
       <View style={styles.center}>
-        <Text>This is the contact screen</Text>
+        <Text>This is the {name} screen</Text>
       </View>
     </View>
   );
 };
-export default About;
+export default Profile;
