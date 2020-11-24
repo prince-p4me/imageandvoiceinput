@@ -7,7 +7,7 @@ import styles from "../utility/Style";
 const About = ({ navigation, route }) => {
   return (
     <View style={styles.container}>
-      <Header title={route.name} />
+      <Header title={route.name} toogleDrawer={navigation.toggleDrawer} />
       <View style={styles.center}>
         <Text>This is the contact screen</Text>
       </View>

@@ -12,7 +12,9 @@ export default StyleSheet.create({
     width: 45, height: 45,
     position: "absolute",
     // backgroundColor: "white",
-    left: 0
+    left: 0,
+    justifyContent: "center",
+    alignItems: "center"
   },
   title: { fontWeight: "700", fontSize: 16, color: "white" },
   safeArea: { backgroundColor: Constants.color, width: "100%" },
@@ -29,4 +31,5 @@ export default StyleSheet.create({
     justifyContent: "flex-start",
     // backgroundColor: "red",
   },
+  sideIcon: { width: 30, height: 30, resizeMode: "contain", tintColor: "white" }
 })
