@@ -169,8 +169,9 @@ export default function TextToSpeech({ visible, submit, close }) {
             </TouchableHighlight>
             <TouchableHighlight onPress={() => {
               _destroyRecognizer();
-              if (!partialResults) {
-                setPartialResults("Please record something to submit the feedback");
+              if (!partialResults.length) {
+                setPartialResults(["Please record something to submit the feedback"]);
+                return;
               } else {
                 setStarted(false);
                 submit(partialResults);
