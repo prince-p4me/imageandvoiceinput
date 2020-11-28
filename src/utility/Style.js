@@ -28,7 +28,7 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center",
-    justifyContent: "flex-start",
+    // justifyContent: "flex-start",
     // backgroundColor: "red",
   },
   sideIcon: { width: 30, height: 30, resizeMode: "contain", tintColor: "white" }

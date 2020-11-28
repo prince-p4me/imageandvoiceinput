@@ -8,7 +8,7 @@ const Profile = ({ navigation, route }) => {
   const { name } = route;
   return (
     <View style={styles.container}>
-      <Header title={name} toogleDrawer={navigation.toggleDrawer} />
+      <Header title={name} navigation={navigation} />
       <View style={styles.center}>
         <Text>This is the {name} screen</Text>
       </View>
