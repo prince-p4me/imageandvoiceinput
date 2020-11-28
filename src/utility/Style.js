@@ -2,6 +2,23 @@ import { View, StyleSheet, Dimensions } from "react-native";
 import Constants from "./Constants";
 
 export default StyleSheet.create({
+  list: {
+    width: "100%", height: 100,
+    borderBottomWidth: 1,
+    borderColor: "lightgray",
+    flexDirection: "row",
+    paddingHorizontal: 10,
+    paddingVertical: 10
+  },
+  listImage: {
+    width: 120, height: 80,
+    resizeMode: "cover"
+  },
+  listBtn: {
+    backgroundColor: Constants.color,
+    width: 120, height: 25, borderRadius: 12,
+    justifyContent: "center", alignItems: "center"
+  },
   header: {
     height: 45, width: "100%",
     backgroundColor: Constants.color,
